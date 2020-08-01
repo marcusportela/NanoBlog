@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Deletar Mensagem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Deletar Mensagem</h1>
+
+    <p>Para excluir uma mensagem já enviada digite o id dela.<br>
+        Para descobrir o id da sua mensagem <a href="/lista">clique aqui</a></p>
+
+    <form action="/delete" method="POST">
+        
+        <label for="id">Id da mensagem:</label>
+        <input type="text" id="id" name="id"><br><br>
+        
+        <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
+
+    </form>
+</body>
+
+</html>

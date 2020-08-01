@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cadastro de Mensagem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Nova Mensagem</h1>
+    
+    <form action="/insere" method="post">
+        
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" name="titulo"><br><br>
+        Texto:
+        <textarea id="texto" name="texto" rows="4" cols="50" for="texto"></textarea>
+
+        <p><input type="submit" value="Enviar"/></p>
+
+    </form>
+
+    <p><a href="/lista"><button>Mensagem já enviadas</button></a></p>
+    <p><a href="/updateForm"><button>Alterar uma mensagem já enviada</button></a></p>
+    <p><a href="/deleteForm"><button>Deletar uma mensagem já enviada</button></a></p>
+
+</body>
+
+</html>

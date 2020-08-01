@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Alterar Mensagem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Alterar Mensagem</h1>
+
+    <p>Para alterar uma mensagem já enviada digite o id dela.<br>
+    Para descobrir o id da sua mensagem <a href="/lista">clique aqui</a></p>
+
+    <form action="/update" method="POST">
+        <!--recebendo id-->
+        <label for="id">Id da mensagem:</label>
+        <input type="text" id="id" name="id"><br><br>
+        
+        <!--recebendo novo texto-->
+        <textarea id="texto" name="texto" rows="4" cols="50" for="texto">Texto:</textarea>
+        
+        <!--botão para envio-->
+        <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
+
+    </form>
+   
+
+</body>
+
+</html>
